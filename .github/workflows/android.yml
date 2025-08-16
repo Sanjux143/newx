@@ -25,8 +25,6 @@ jobs:
         run: |
           mkdir -p app/src/main/assets/
           gdown --fuzzy "https://drive.google.com/file/d/1MgfQ-cWET5JU59HYh5y_e6dyfA6gLgBP/view?usp=drive_link" -O app/src/main/assets/imagefs.txz
-          gdown --fuzzy "https://drive.google.com/file/d/1ImPvxtXiUJz4W82XjB7-G9WtUVueSE5Q/view?usp=drive_link" -O app/src/main/assets/proton-9.0-arm64ec.txz
-          gdown --fuzzy "https://drive.google.com/file/d/114eG0RTgnc1TWdfiBmxSJvjPdr396yir/view?usp=drive_link" -O app/src/main/assets/proton-9.0-x86_64.txz
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
