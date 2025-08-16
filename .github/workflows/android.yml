@@ -23,8 +23,12 @@ jobs:
 
       - name: Download Google Drive assets
         run: |
-          mkdir -p app/src/main/assets/
           gdown --fuzzy "https://drive.google.com/file/d/1MgfQ-cWET5JU59HYh5y_e6dyfA6gLgBP/view?usp=drive_link" -O app/src/main/assets/imagefs.txz
+
+      - name: Join Proton asset parts from split/
+        run: |
+          cat split/proton-9.0-arm64ec.txz.* > app/src/main/assets/proton-9.0-arm64ec.txz
+          echo "✅ Joined proton-9.0-arm64ec.txz from split/"
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
