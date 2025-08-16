@@ -2,4 +2,4 @@
 app/src/main/assets/container_pattern.tzst filter=lfs diff=lfs merge=lfs -text
 app/src/main/assets/container_pattern_bionic.tzst filter=lfs diff=lfs merge=lfs -text
 app/src/main/assets/imagefs.txz filter=lfs diff=lfs merge=lfs -text
-app/src/main/assets/proton_arm64/*.part* filter=lfs diff=lfs merge=lfs -text
+split/*.part* filter=lfs diff=lfs merge=lfs -text
